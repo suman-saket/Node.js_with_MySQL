@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User-App</title>
+    <script src="./JS/index.js" defer></script>
+  </head>
+
+  <body id="body">
+
+    <h2>Upload CSV File and Insert File-Data in DB</h2>
+    <form method="POST" id="csv_form" enctype="multipart/form-data">
+      <input type="file" name="docs" id="file" accept=".csv" />
+      <button type="" submit>Upload File</button>
+    </form>
+
+    <br />
+    <br />
+
+    <button type="csv_button" id="csv_button">Show CSV Data</button>
+    <br />
+    <br />
+    <table class="csv_table" border="2">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+    
+  </body>
+</html>

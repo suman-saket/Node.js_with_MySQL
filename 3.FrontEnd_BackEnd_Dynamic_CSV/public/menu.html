@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css "
+    />
+    <script src="JS/menu.js" defer></script>
+  </head>
+  <style>
+    .container {
+      margin: auto;
+      margin-top: 200px;
+      width: 50%;
+      border: 3px solid #2baec5;
+      padding: 10px;
+      margin-bottom: 100px;
+    }
+    dialog {
+      width: 50%;
+      background-color: #f4ffef;
+      border: 1px dotted black;
+      margin-top: 100px;
+      align-items: center;
+    }
+    h2 {
+      text-align: center;
+      color: dodgerblue;
+    }
+
+    #file {
+      margin-bottom: 10px;
+    }
+    .dropdown-content button {
+      margin: 5px;
+      width: 95%;
+      background-color: lightblue;
+      padding: 5px;
+      border: none;
+    }
+
+    .container button {
+      background-color: hsl(201, 82%, 51%); /* Green */
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 3px;
+    }
+
+    .data-list button {
+      background-color: hsl(201, 82%, 51%); /* Green */
+      border: none;
+      color: white;
+      padding: 12px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 3px;
+      margin-top: 51px;
+      margin-left: 650px;
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="dropdown-content">
+          <button id="show">Uplaod</button>
+          <br />
+          <button>Link1</button>
+          <br />
+          <button>Link2</button>
+        </div>
+      </div>
+      <div class="topnav-right">
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div>
+      <dialog id="myFirstDialog">
+        <i class="fa fa-window-close" id="hide" aria-hidden="true"></i>
+        <div class="container">
+          <h2>Upload - File</h2>
+          <form method="POST" id="csv_form" enctype="multipart/form-data">
+            <input type="file" name="docs" id="file" accept=".csv" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+      </dialog>
+    </div>
+    <div class="data-list" id="csv_button"><button>Show Data</button></div>
+
+    <table class="csv_table">
+      <thead></thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>
